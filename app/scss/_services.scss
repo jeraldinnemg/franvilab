@@ -1,0 +1,63 @@
+.container {
+
+    flex-direction: column;
+    margin: 5rem 10rem;
+
+    @include breakpoint-up (medium){
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 0 50%;
+        }
+
+    
+    @include breakpoint-up (large){
+    flex-direction: row;
+    flex: 1;
+        }
+
+    
+    &__functions {
+        flex-direction: column;
+
+        
+       .function{
+            position:relative;
+
+            .overlay{
+                width: 0%;
+                height: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: $bordo;
+                overflow: hidden;
+                transition: 0.5s ease;
+            }
+
+            .overlay-text{
+                top: 50%;
+                left: 50%;
+                position:absolute;
+                color: $white;
+                font-size: 1.6rem;
+                transform: translate(-50%, -50%);
+                overflow:hidden;
+                border-top: 1px solid $white;
+                border-bottom: 1px solid $white;
+            }
+        }
+
+        .function:hover .overlay{
+            width: 100%;
+            opacity: 0.8;
+        }
+    }
+    
+}
+
+
+
+
+
+
