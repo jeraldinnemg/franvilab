@@ -298,8 +298,8 @@ body {
 
 .container__form select,
 .container__form .select:after {
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: select;
 }
 
@@ -313,10 +313,19 @@ body {
   border-radius: inherit;
 }
 
+.container__form .tricromia .select .hide {
+  display: none;
+}
+
+.container__form .tricromia .select .show {
+  display: block;
+}
+
 .header nav {
   background-color: #ece5e5;
   padding: 1.0625rem 1.5rem;
   width: 100%;
+  max-height: 50px;
 }
 
 .header__logo img {

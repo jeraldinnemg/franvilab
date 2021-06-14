@@ -136,7 +136,21 @@
             bottom: -1px;
             border: 2px solid $bordo;
             border-radius: inherit;
-        
-
     }
+    
+    .tricromia {
+        .select {
+            .hide {
+                display:none;
+            }
+
+            .show {
+                display: block;
+            }
+
+        }
+    } 
+            
 }
+
+

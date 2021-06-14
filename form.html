@@ -42,17 +42,17 @@
                             <div class= "radio__form flex flex-jc-sb flex-ai-c"> 
                                 <div class="form-check">
 
-                                    <input class="form-check-input" type="radio" name="radio" id="directo">
-                                    <label class="form-check-label" for="directo">Directo</label>
+                                    <input class="form-check-input" type="radio" name="radio" id="cdirecto">
+                                    <label class="form-check-label" for="cdirecto" >Directo</label>
                                 </div>
                                 <div class="form-check">
                                     
-                                    <input class="form-check-input" type="radio" name="radio" id="reactivo">
-                                    <label class="form-check-label" for="reactivo">Reactivo</label>
+                                    <input class="form-check-input" type="radio" name="radio" id="creactivo">
+                                    <label class="form-check-label" for="creactivo">Reactivo</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="radio" id="disperso">
-                                    <label class="form-check-label" for="disperso">Disperso</label>
+                                    <input class="form-check-input" type="radio" name="radio" id="cdisperso">
+                                    <label class="form-check-label" for="cdisperso"  class="radio">Disperso</label>
                                 </div>
                             </div>
 
@@ -91,37 +91,142 @@
                                 
                             <div class="tricromia flex flex-jc-sb flex-ai-c ">
                                 <div class="select">
-                                    <select>
-                                            <option disabled selected>Color 1</option>
+                                    <select name= "directos" id="directo" class="directo show">
+                                            <option disabled selected>Color</option>
+                                            <option value="AMA EVD RL">AMA EVD RL</option>
+                                            <option value="AMA EVD RL 105">AMA EVD RL 105</option>
+                                            <option value="ROJO EVD BWS">ROJO EVD BWS</option>
+                                            <option value="AZL EVD FFRL">AZL EVD FFRL</option>
+                                            <option value="GRIS EVD CGL">GRIS EVD CGL</option>
+                                            <option value="AMA K PG">AMA K PG</option>
+                                            <option value="NJA K 2GL">NJA K 2GL</option>
+                                            <option value="RJO K 3BL">RJO K 3BL</option>
+                                            <option value="RJO K BWS">RJO K BWS</option>
+                                            <option value="VIOLETA K 2B">VIOLETA K 2B</option>
+                                            <option value="TSA K FBL">TSA K FBL</option>
+                                    </select>
+                                    <select name= "reactivos" id="reactivo" class="reactivo hide">
+                                            <option disabled selected>Color</option>
                                             <option value="AMA 3RX MAX">AMA 3RX MAX</option>
+                                            <option value="AMA 4GL MAX">AMA 4GL MAX</option>
+                                            <option value="AMA REMAZOL 3GL">AMA REMAZOL 3GL</option>
                                             <option value="RJO 3B MAX">RJO 3B MAX</option>
+                                            <option value="RJO HE3B MAX">RJO HE3B MAX</option>
                                             <option value="AZL 4GX MAX">AZL 4GX MAX</option>
                                             <option value="NEGRO B MAX">NEGRO B MAX</option>
+                                            <option value="CNO MAX HEXL">CNO MAX HEXL</option>
+                                            <option value="NJA 2RX MAX">NJA 2RX MAX</option>
+                                            <option value="TURQUESA R HCG">TURQUESA R HCG</option>
                                     </select>
+                                    <select name= "dispersos" id="disperso" class="disperso hide">
+                                            <option disabled selected>Color</option>
+                                            <option value="ALLO L E3G 200%">ALLO L E3G 200%</option>
+                                            <option value="PDO AM L SER 150%">PDO AM L SER 150%</option>
+                                            <option value="ROJO L FB 200%">ROJO L FB 200%</option>
+                                            <option value="RUBINA L 2GFL 200%">RUBINA L 2GFL 200%</option>
+                                            <option value="RUBINA L 2GFL 400%">RUBINA L 2GFL 400%</option>
+                                            <option value="ROJO FLUO K POL FRR">ROJO FLUO K POL FRR</option>
+                                            <option value="AZUL LFBLE 150%">AZUL LFBLE 150%</option>
+                                            <option value="AZUL L SFBL 300%">AZUL L SFBL 300%</option>
+                                            <option value="MNO L EXNSF 300%">MNO L EXNSF 300%</option>
+                                            <option value="TURQ L SGL 200%">TURQ L SGL 200%</option>
+                                            <option value="NEGRO L EXNSF 300%">RJO HE3B MAX</option>
+                                            <option value="NARANJA L H3R 200%">NARANJA L H3R 200%</option>
+                                    </select>           
                                 </div>
                                 <input type="text" class="input__form"  id="input-receta"placeholder="0.0000 %" required>
                             </div>
                             <div class="tricromia flex flex-jc-sb flex-ai-c ">
                                 <div class="select">
-                                    <select>
-                                            <option disabled selected>Color 2</option>
-                                            <option value="AMA 3RX MAX">AMA 3RX MAX</option>
-                                            <option value="RJO 3B MAX">RJO 3B MAX</option>
-                                            <option value="AZL 4GX MAX">AZL 4GX MAX</option>
-                                            <option value="NEGRO B MAX">NEGRO B MAX</option>
-                                    </select>
+                                    <select name= "directos" id="directo" class="directo show">
+                                        <option disabled selected>Color</option>
+                                        <option value="AMA EVD RL">AMA EVD RL</option>
+                                        <option value="AMA EVD RL 105">AMA EVD RL 105</option>
+                                        <option value="ROJO EVD BWS">ROJO EVD BWS</option>
+                                        <option value="AZL EVD FFRL">AZL EVD FFRL</option>
+                                        <option value="GRIS EVD CGL">GRIS EVD CGL</option>
+                                        <option value="AMA K PG">AMA K PG</option>
+                                        <option value="NJA K 2GL">NJA K 2GL</option>
+                                        <option value="RJO K 3BL">RJO K 3BL</option>
+                                        <option value="RJO K BWS">RJO K BWS</option>
+                                        <option value="VIOLETA K 2B">VIOLETA K 2B</option>
+                                        <option value="TSA K FBL">TSA K FBL</option>
+                                </select>
+                                <select name= "reactivos" id="reactivo" class="reactivo hide">
+                                        <option disabled selected>Color</option>
+                                        <option value="AMA 3RX MAX">AMA 3RX MAX</option>
+                                        <option value="AMA 4GL MAX">AMA 4GL MAX</option>
+                                        <option value="AMA REMAZOL 3GL">AMA REMAZOL 3GL</option>
+                                        <option value="RJO 3B MAX">RJO 3B MAX</option>
+                                        <option value="RJO HE3B MAX">RJO HE3B MAX</option>
+                                        <option value="AZL 4GX MAX">AZL 4GX MAX</option>
+                                        <option value="NEGRO B MAX">NEGRO B MAX</option>
+                                        <option value="CNO MAX HEXL">CNO MAX HEXL</option>
+                                        <option value="NJA 2RX MAX">NJA 2RX MAX</option>
+                                        <option value="TURQUESA R HCG">TURQUESA R HCG</option>
+                                </select>
+                                <select name= "dispersos" id="disperso" class="disperso hide">
+                                        <option disabled selected>Color</option>
+                                        <option value="ALLO L E3G 200%">ALLO L E3G 200%</option>
+                                        <option value="PDO AM L SER 150%">PDO AM L SER 150%</option>
+                                        <option value="ROJO L FB 200%">ROJO L FB 200%</option>
+                                        <option value="RUBINA L 2GFL 200%">RUBINA L 2GFL 200%</option>
+                                        <option value="RUBINA L 2GFL 400%">RUBINA L 2GFL 400%</option>
+                                        <option value="ROJO FLUO K POL FRR">ROJO FLUO K POL FRR</option>
+                                        <option value="AZUL LFBLE 150%">AZUL LFBLE 150%</option>
+                                        <option value="AZUL L SFBL 300%">AZUL L SFBL 300%</option>
+                                        <option value="MNO L EXNSF 300%">MNO L EXNSF 300%</option>
+                                        <option value="TURQ L SGL 200%">TURQ L SGL 200%</option>
+                                        <option value="NEGRO L EXNSF 300%">RJO HE3B MAX</option>
+                                        <option value="NARANJA L H3R 200%">NARANJA L H3R 200%</option>
+                                </select> 
                                 </div>
                                 <input type="text" class="input__form"  id="input-receta"placeholder="0.0000 %" required>
                             </div>
                             <div class="tricromia flex flex-jc-sb flex-ai-c ">
                                 <div class="select">
-                                    <select>
-                                            <option disabled selected>Color 3</option>
+                                    <select name= "directos" id="directo" class="directo show">
+                                            <option disabled selected>Color</option>
+                                            <option value="AMA EVD RL">AMA EVD RL</option>
+                                            <option value="AMA EVD RL 105">AMA EVD RL 105</option>
+                                            <option value="ROJO EVD BWS">ROJO EVD BWS</option>
+                                            <option value="AZL EVD FFRL">AZL EVD FFRL</option>
+                                            <option value="GRIS EVD CGL">GRIS EVD CGL</option>
+                                            <option value="AMA K PG">AMA K PG</option>
+                                            <option value="NJA K 2GL">NJA K 2GL</option>
+                                            <option value="RJO K 3BL">RJO K 3BL</option>
+                                            <option value="RJO K BWS">RJO K BWS</option>
+                                            <option value="VIOLETA K 2B">VIOLETA K 2B</option>
+                                            <option value="TSA K FBL">TSA K FBL</option>
+                                    </select>
+                                    <select name= "reactivos" id="reactivo" class="reactivo hide">
+                                            <option disabled selected>Color</option>
                                             <option value="AMA 3RX MAX">AMA 3RX MAX</option>
+                                            <option value="AMA 4GL MAX">AMA 4GL MAX</option>
+                                            <option value="AMA REMAZOL 3GL">AMA REMAZOL 3GL</option>
                                             <option value="RJO 3B MAX">RJO 3B MAX</option>
+                                            <option value="RJO HE3B MAX">RJO HE3B MAX</option>
                                             <option value="AZL 4GX MAX">AZL 4GX MAX</option>
                                             <option value="NEGRO B MAX">NEGRO B MAX</option>
+                                            <option value="CNO MAX HEXL">CNO MAX HEXL</option>
+                                            <option value="NJA 2RX MAX">NJA 2RX MAX</option>
+                                            <option value="TURQUESA R HCG">TURQUESA R HCG</option>
                                     </select>
+                                    <select name= "dispersos" id="disperso"  class="disperso hide">
+                                            <option disabled selected>Color</option>
+                                            <option value="ALLO L E3G 200%">ALLO L E3G 200%</option>
+                                            <option value="PDO AM L SER 150%">PDO AM L SER 150%</option>
+                                            <option value="ROJO L FB 200%">ROJO L FB 200%</option>
+                                            <option value="RUBINA L 2GFL 200%">RUBINA L 2GFL 200%</option>
+                                            <option value="RUBINA L 2GFL 400%">RUBINA L 2GFL 400%</option>
+                                            <option value="ROJO FLUO K POL FRR">ROJO FLUO K POL FRR</option>
+                                            <option value="AZUL LFBLE 150%">AZUL LFBLE 150%</option>
+                                            <option value="AZUL L SFBL 300%">AZUL L SFBL 300%</option>
+                                            <option value="MNO L EXNSF 300%">MNO L EXNSF 300%</option>
+                                            <option value="TURQ L SGL 200%">TURQ L SGL 200%</option>
+                                            <option value="NEGRO L EXNSF 300%">RJO HE3B MAX</option>
+                                            <option value="NARANJA L H3R 200%">NARANJA L H3R 200%</option>
+                                    </select> 
                                 </div>
                                 <input type="text" class="input__form"  id="input-receta"placeholder="0.0000 %" required>
                             </div>
@@ -132,6 +237,8 @@
 
                 </div>
         </form>
+
+        <script src="app/js/script.js"></script>
     
 </body>
 </html>
