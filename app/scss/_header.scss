@@ -19,12 +19,27 @@
 
         &__modulo {
                 color: $bordo;
+                font-size: 1.4rem;
+
+                @include breakpoint-up (medium){
+                    font-size: 1.8rem;
+                    
+                    }
+            
+                
+                @include breakpoint-up (large){
+                    font-size: 1.8rem;
+              
+                    }
             }
             
             span {
                 color: rgb(255, 255, 255);
                 background-color: rgb(8, 6, 37);
             }
+        
+
+            
 
     }
     

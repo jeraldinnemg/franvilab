@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Programas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="flex flex-jc-sb">
+            <div>
+                <a href="#" class="header__logo">
+                    <img src="images/franvitex.png" alt="franvitex" id="logo">
+                </a>
+            </div>
+    
+                <h3 class="header__modulo" >Módulo de Laboratorio FRANVI <span>L A B</span></h3> 
+        </nav>
+    </header>
+
+
+        
+    <div class="container__program flex flex-jc-c flex-ai-c">
+        <div class="container__form ">
+            <form>
+                <h3> Máquina 1: "UGOLINI" </h3>
+                    <label for="color" id="color" name="color">Color:</label>
+                    <input type="text" class="input__form" placeholder="Introduce el color" autofocus="">
+
+                    <label for="proceso">Proceso:</label>
+                    <div class="select">
+                        <select name="proceso1" class="proceso1">
+                            <option value="">Selecciona el proceso</option>
+                            <option value="00:25:00">Lavado</option>
+                            <option value="01:40:00">Tintura 63°C</option>
+                            <option value="01:40:00">Tintura 83°C</option>
+                            <option value="01:40:00">Tintura 100°C</option>
+                            <option value="01:40:00">Tintura 131°C</option>
+                            <option value="00:30:00">Jabonado</option>
+                        </select>
+                    </div>
+
+                    <label for="H.Inicio">H.Inicio</label>
+                    <input type="text" class="input__form inicio1" id="in-time1" placeholder="00:00:00" oninput="addTimes()">
+
+                    <label for="Duración">Duración:</label>
+                    <input type="text" class="input__form dur1" id="dur-time1" placeholder="00:00:00" oninput="addTimes()">
+
+                    <label for="Retraso">Retraso:</label>
+                    <input type="text" class="input__form ret-time1" placeholder="00:00:00" oninput="addTimes()">
+
+                    <label for="text">H.Fin:</label>
+                    <input type="text" class="input__form fin1" id="fin1" placeholder="00:00:00">
+
+                    <button type="submit" class= "btn" value="Programarr">Programar</button>
+            </form>
+            
+        </div>
+
+        <div class="container__form">
+            <form>
+                <h3>Máquina 2: "RAPID"</h3>
+
+                    <label for="color" id="color" name="color">Color:</label>
+                    <input type="text" class="input__form" placeholder="Introduce el color" autofocus="">
+  
+                    <label for="proceso">Proceso:</label>
+                    <div class="select">
+                        <select name="proceso2" class="proceso2">
+                            <option value="seleccion">Selecciona el proceso</option>
+                            <option value="00:20:00">Lavado</option>
+                            <option value="01:40:00">Tintura 63°C</option>
+                            <option value="01:40:00">Tintura 83°C</option>
+                            <option value="01:20:00">Tintura 100°C</option>
+                            <option value="01:30:00">Tintura 131°C</option>
+                            <option value="00:35:00">Jabonado</option>
+                        </select>
+                    </div>
+  
+                    <label for="text">H.Inicio: </label>
+                    <input type="text" class="input__form inicio2" id="in-time2" placeholder="00:00:00" oninput="addTimes2()">
+                           
+                    <label for="duracion">Duración:</label>
+                    <input type="text" class="input__form dur2" id="dur-time2" placeholder="00:00:00" oninput="addTimes2()">
+                            
+                    <label for="time">Retraso:</label>
+                    <input type="text" class="input__form ret2" id="ret-time2" placeholder="00:00:00" oninput="addTimes2()">
+
+                    <label for="time">H.Fin:</label>
+                    <input type="text" class="input__form fin2" id="fin2" placeholder="00:00:00">
+
+                    <button type="submit" class= "btn" value="Programar">Programar</button>
+            
+            
+                </form>
+            
+
+        </div>
+        
+        <div class="container__form">
+            <form>
+
+                <h3>Máquina 3: "ECODYER"</h3>
+                    <label for="color" id="color" name="color">Color:</label>
+                    <input type="text" class="input__form" placeholder="Introduce el color" autofocus="">
+
+                    <label for="proceso">Proceso:</label>
+                    <div class="select">
+                        <select name="proceso3" class="proceso3">
+                            <option value="seleccion">Selecciona el proceso</option>
+                            <option value="00:25:00">Lavado</option>
+                            <option value="01:45:00">Tintura 63°C</option>
+                            <option value="01:50:00">Tintura 83°C</option>
+                            <option value="01:35:00">Tintura 100°C</option>
+                            <option value="01:25:00">Tintura 131°C</option>
+                            <option value="00:40:00">Jabonado</option>
+                        </select>
+                    </div>
+
+                    <label for="time">H.Inicio:</label>
+                    <input type="text" class="input__form inicio3" id="in-time3" placeholder="00:00:00" oninput="addTimes3()">
+
+                    <label for="Duración">Duración:</label>
+                    <input type="text" class="input__form dur3" id="dur-time3" placeholder="00:00:00" oninput="addTimes3()">
+
+                    <label for="Retraso<">Retraso:</label>
+                    <input type="text" class="input__form ret3" id="ret-time3" placeholder="00:00:00" oninput="addTimes3()">
+
+                    <label for="H.Fin">H.Fin:</label>
+                    <input type="text" class="input__form fin3" id="fin3" placeholder="00:00:00">
+                    
+                    <button type="submit" class= "btn" value="Programarr">Programar</button>
+            </form>
+        </div>
+
+
+        
+    </div>
+    
+</body>
+
+<script src="app/js/script.js"></script>
+
+</html>

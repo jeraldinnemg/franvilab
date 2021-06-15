@@ -1,0 +1,22 @@
+.container__program {
+
+    flex-direction: column;
+    margin: 10px 50px;
+
+     
+    @include breakpoint-up (medium){
+        flex-direction: row;
+ 
+        }
+
+    
+    @include breakpoint-up (large){
+    flex-direction: row;
+        }
+
+        .container__form {
+            margin: 20px 30px;
+
+
+        }
+}
