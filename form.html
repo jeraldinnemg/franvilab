@@ -6,8 +6,8 @@
     <title>Formulario de Recetas</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+
 
 <body>
     <header class="header">
@@ -18,8 +18,8 @@
                     <img src="images/franvitex.png" alt="franvitex" id="logo">
                 </a>
             </div>
-    
-                <h3 class="header__modulo" >Módulo de Laboratorio FRANVI <span>L A B</span></h3> 
+
+                <h3 class="header__modulo" >Módulo de Laboratorio FRANVI <span>L A B</span></h3>
         </nav>
     </header>
 
@@ -39,19 +39,19 @@
                             <input type="number" class="input__form"  name="tanda" id="tanda" min="1" max="50" required>
 
                             <label for="metodo">Método:</label>
-                            <div class= "radio__form flex flex-jc-sb flex-ai-c"> 
+                            <div class= "radio__form flex flex-jc-sb flex-ai-c">
                                 <div class="form-check">
 
-                                    <input class="form-check-input" type="radio" name="radio" id="cdirecto">
+                                    <input class="form-check-input" type="radio" name="method-type" id="cdirecto">
                                     <label class="form-check-label" for="cdirecto" >Directo</label>
                                 </div>
                                 <div class="form-check">
-                                    
-                                    <input class="form-check-input" type="radio" name="radio" id="creactivo">
+
+                                    <input class="form-check-input" type="radio" name="method-type" id="creactivo">
                                     <label class="form-check-label" for="creactivo">Reactivo</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="radio" id="cdisperso">
+                                    <input class="form-check-input" type="radio" name="method-type" id="cdisperso">
                                     <label class="form-check-label" for="cdisperso"  class="radio">Disperso</label>
                                 </div>
                             </div>
@@ -86,9 +86,9 @@
                             <label for="origen">Origen hilado:</label>
                             <input type="text" class="input__form"  id="input-origen" name="origen" placeholder="Introduce el origen del hilado" required>
 
-                            <label for="receta" id="receta" name="receta" >Receta:</label>    
-            
-                                
+                            <label for="receta" id="receta" name="receta" >Receta:</label>
+
+
                             <div class="tricromia flex flex-jc-sb flex-ai-c ">
                                 <div class="select">
                                     <select name= "directos" id="directo" class="directo show">
@@ -132,7 +132,7 @@
                                             <option value="TURQ L SGL 200%">TURQ L SGL 200%</option>
                                             <option value="NEGRO L EXNSF 300%">RJO HE3B MAX</option>
                                             <option value="NARANJA L H3R 200%">NARANJA L H3R 200%</option>
-                                    </select>           
+                                    </select>
                                 </div>
                                 <input type="text" class="input__form"  id="input-receta"placeholder="0.0000 %" required>
                             </div>
@@ -179,7 +179,7 @@
                                         <option value="TURQ L SGL 200%">TURQ L SGL 200%</option>
                                         <option value="NEGRO L EXNSF 300%">RJO HE3B MAX</option>
                                         <option value="NARANJA L H3R 200%">NARANJA L H3R 200%</option>
-                                </select> 
+                                </select>
                                 </div>
                                 <input type="text" class="input__form"  id="input-receta"placeholder="0.0000 %" required>
                             </div>
@@ -226,12 +226,12 @@
                                             <option value="TURQ L SGL 200%">TURQ L SGL 200%</option>
                                             <option value="NEGRO L EXNSF 300%">RJO HE3B MAX</option>
                                             <option value="NARANJA L H3R 200%">NARANJA L H3R 200%</option>
-                                    </select> 
+                                    </select>
                                 </div>
                                 <input type="text" class="input__form"  id="input-receta"placeholder="0.0000 %" required>
                             </div>
-                            
-                            
+
+
 
                             <button type="submit" class= "btn" value="Registrar">Registrar</button>
 
@@ -239,6 +239,6 @@
         </form>
 
         <script src="app/js/script.js"></script>
-    
+
 </body>
 </html>
