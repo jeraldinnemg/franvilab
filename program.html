@@ -37,30 +37,28 @@
 
                     <label for="proceso">Proceso:</label>
                     <div class="select">
-                        <select name="proceso1" class="proceso1">
+                        <select name="proceso_ugo" id="proceso_ugo">
                             <option value="">Selecciona el proceso</option>
-                            <option value="00:25:00">Lavado</option>
-                            <option value="01:40:00">Tintura 63°C</option>
-                            <option value="01:40:00">Tintura 83°C</option>
-                            <option value="01:40:00">Tintura 100°C</option>
-                            <option value="01:40:00">Tintura 131°C</option>
-                            <option value="00:30:00">Jabonado</option>
+                            <option value="00:25">Lavado</option>
+                            <option value="01:40">Tintura 63°C</option>
+                            <option value="01:40">Tintura 83°C</option>
+                            <option value="01:40">Tintura 100°C</option>
+                            <option value="01:40">Tintura 131°C</option>
+                            <option value="00:30">Jabonado</option>
                         </select>
                     </div>
 
                     <label for="H.Inicio">H.Inicio</label>
-                    <input type="text" class="input__form inicio1" id="in-time1" placeholder="00:00:00" oninput="addTimes()">
+                    <input type="text" class="input__form" id="init_ugo" placeholder="00:00" oninput="addTimes()">
 
                     <label for="Duración">Duración:</label>
-                    <input type="text" class="input__form dur1" id="dur-time1" placeholder="00:00:00" oninput="addTimes()">
+                    <input type="text" class="input__form dur_ugo" id="dur_ugo" placeholder="00:00" oninput="addTimes()">
 
                     <label for="Retraso">Retraso:</label>
-                    <input type="text" class="input__form ret-time1" placeholder="00:00:00" oninput="addTimes()">
+                    <input type="text" class="input__form" id="delay_ugo" placeholder="00:00" oninput="addTimes()">
 
                     <label for="text">H.Fin:</label>
-                    <input type="text" class="input__form fin1" id="fin1" placeholder="00:00:00">
-
-                    <button type="submit" class= "btn" value="Programarr">Programar</button>
+                    <input type="text" class="input__form fin_ugo" placeholder="00:00">
             </form>
             
         </div>
@@ -74,31 +72,28 @@
   
                     <label for="proceso">Proceso:</label>
                     <div class="select">
-                        <select name="proceso2" class="proceso2">
+                        <select name="proceso_rapi" id="proceso_rapi">
                             <option value="seleccion">Selecciona el proceso</option>
-                            <option value="00:20:00">Lavado</option>
-                            <option value="01:40:00">Tintura 63°C</option>
-                            <option value="01:40:00">Tintura 83°C</option>
-                            <option value="01:20:00">Tintura 100°C</option>
-                            <option value="01:30:00">Tintura 131°C</option>
-                            <option value="00:35:00">Jabonado</option>
+                            <option value="00:20">Lavado</option>
+                            <option value="01:40">Tintura 63°C</option>
+                            <option value="01:40">Tintura 83°C</option>
+                            <option value="01:20">Tintura 100°C</option>
+                            <option value="01:30">Tintura 131°C</option>
+                            <option value="00:35">Jabonado</option>
                         </select>
                     </div>
   
                     <label for="text">H.Inicio: </label>
-                    <input type="text" class="input__form inicio2" id="in-time2" placeholder="00:00:00" oninput="addTimes2()">
+                    <input type="text" class="input__form" id="init_rapi" placeholder="00:00" oninput="addTimes2()">
                            
                     <label for="duracion">Duración:</label>
-                    <input type="text" class="input__form dur2" id="dur-time2" placeholder="00:00:00" oninput="addTimes2()">
+                    <input type="text" class="input__form dur_rapi" id="dur_rapi" placeholder="00:00" oninput="addTimes2()">
                             
                     <label for="time">Retraso:</label>
-                    <input type="text" class="input__form ret2" id="ret-time2" placeholder="00:00:00" oninput="addTimes2()">
+                    <input type="text" class="input__form" id="delay_rapi" placeholder="00:00" oninput="addTimes2()">
 
                     <label for="time">H.Fin:</label>
-                    <input type="text" class="input__form fin2" id="fin2" placeholder="00:00:00">
-
-                    <button type="submit" class= "btn" value="Programar">Programar</button>
-            
+                    <input type="text" class="input__form fin_rapi" id="fin2" placeholder="00:00">
             
                 </form>
             
@@ -114,30 +109,29 @@
 
                     <label for="proceso">Proceso:</label>
                     <div class="select">
-                        <select name="proceso3" class="proceso3">
+                        <select name="proceso_eco" id="proceso_eco">
                             <option value="seleccion">Selecciona el proceso</option>
-                            <option value="00:25:00">Lavado</option>
-                            <option value="01:45:00">Tintura 63°C</option>
-                            <option value="01:50:00">Tintura 83°C</option>
-                            <option value="01:35:00">Tintura 100°C</option>
-                            <option value="01:25:00">Tintura 131°C</option>
-                            <option value="00:40:00">Jabonado</option>
+                            <option value="00:25">Lavado</option>
+                            <option value="01:45">Tintura 63°C</option>
+                            <option value="01:50">Tintura 83°C</option>
+                            <option value="01:35">Tintura 100°C</option>
+                            <option value="01:25">Tintura 131°C</option>
+                            <option value="00:40">Jabonado</option>
                         </select>
                     </div>
 
                     <label for="time">H.Inicio:</label>
-                    <input type="text" class="input__form inicio3" id="in-time3" placeholder="00:00:00" oninput="addTimes3()">
+                    <input type="text" class="input__form" id="init_eco" placeholder="00:00" oninput="addTimes3()">
 
                     <label for="Duración">Duración:</label>
-                    <input type="text" class="input__form dur3" id="dur-time3" placeholder="00:00:00" oninput="addTimes3()">
+                    <input type="text" class="input__form dur_eco" id="dur_eco" placeholder="00:00" oninput="addTimes3()">
 
                     <label for="Retraso<">Retraso:</label>
-                    <input type="text" class="input__form ret3" id="ret-time3" placeholder="00:00:00" oninput="addTimes3()">
+                    <input type="text" class="input__form" id="delay_eco" placeholder="00:00" oninput="addTimes3()">
 
                     <label for="H.Fin">H.Fin:</label>
-                    <input type="text" class="input__form fin3" id="fin3" placeholder="00:00:00">
-                    
-                    <button type="submit" class= "btn" value="Programarr">Programar</button>
+                    <input type="text" class="input__form fin_eco" placeholder="00:00">
+                 
             </form>
         </div>
 
@@ -147,6 +141,6 @@
     
 </body>
 
-<script src="app/js/script.js"></script>
+<script src="app/js/program.js"></script>
 
 </html>

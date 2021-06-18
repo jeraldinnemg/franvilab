@@ -6,9 +6,10 @@
         max-width: 400px;
         padding: 20px 40px;
         border-radius: 10px;
-        margin-top: 40px;
+        margin: 30px;
         box-shadow: 5px 5px 10px rgba(68, 68, 68, 0.6);
-        line-height: 3rem;
+
+
 
         .input__form {
         display:inline-block;
@@ -18,9 +19,8 @@
         border: 1px solid $medgray;
         border-radius: 4px;
         width: 100%;
-        padding: 10px 10px;
-        margin:1.5px;
-        height: auto;
+        padding: 8px 8px;
+
         }
 
         input:focus  {
@@ -101,13 +101,13 @@
             border-width: 1px;
             border-style: solid;
             border-color: $medgray;
-            padding: 10px 10px;
+            padding: 8px 8px;
             cursor: pointer;
             display:grid;
             grid-template-areas: "select";
             align-items: center;
             position:relative;
-            height:46px;
+            height:43px;
             outline: none;
 
         }

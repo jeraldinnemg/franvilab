@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+    <title>FRANVILAB</title>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="flex flex-jc-sb">
+        <div>
+            <a href="#" class="header__logo">
+                <img src="images/franvitex.png" alt="franvitex" id="logo">
+            </a>
+        </div>
+
+            <h3 class="header__modulo" >Módulo de Laboratorio FRANVI <span>L A B</span></h3> 
+    </nav>
+</header>
+
+
+<form class="flex flex-jc-c flex-ai-c" name="form" action=""> 
+    <div class="container__form">
+
+        <label for="">Color 1:</label>
+        <input type="text" class="input__form" placeholder="0.0000%">
+        <label for="">Color 2:</label>
+        <input type="text" class="input__form" placeholder="0.0000%">
+        <label for="">Color 3:</label>
+        <input type="text" class="input__form" placeholder="0.0000%">
+
+        <label for="">Selecciona el proceso</label>
+            <div class="select">
+                <select>
+                    <option disabled selected>Tintura</option>
+                    <option value="R63">Tintura a 63°C</option>
+                    <option value="R83">Tintura a 83°C</option>
+                    <option value="R83T">Tintura a 83°C  c/turquesa</option>
+                    <option value="R83T">Tintura a 100°C</option>
+                    <option value="R83T">Tintura a 100°C c/turquesa</option>
+                </select>
+            </div>
+        <button type="submit" class= "btn" value="Calcular">Calcular</button>                          
+    </div>
+</form>
+
+<div class="counter__container flex flex-jc-sa flex-ai-c">
+
+<div class=" counter flex flex-jc-c flex-ai-c">
+    <img src="images/erlenmeyer.png.tmp$$">
+    <div class="count" data-target="12000">50 g/l</div>
+        <span>Sal</span>
+</div>
+<div class=" counter flex flex-jc-c flex-ai-c">
+    <img src="images/erlenmeyer.png.tmp$$">
+    <div class="count" data-target="12000">34 g/l</div>
+        <span>Alcali 1</span>
+</div>
+<div class=" counter flex flex-jc-c flex-ai-c">
+    <img src="images/erlenmeyer.png.tmp$$">
+    <div class="count" data-target="12000">5 g/l</div>
+        <span>Alcali 2</span>
+</div>
+
+</div>
+
+
+
+
+
+    
+</body>
+</html>

@@ -106,7 +106,7 @@ body {
 
 .header__modulo {
   color: #830b0b;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 48em) {
@@ -211,10 +211,9 @@ body {
   max-width: 400px;
   padding: 20px 40px;
   border-radius: 10px;
-  margin-top: 40px;
+  margin: 30px;
   -webkit-box-shadow: 5px 5px 10px rgba(68, 68, 68, 0.6);
           box-shadow: 5px 5px 10px rgba(68, 68, 68, 0.6);
-  line-height: 3rem;
 }
 
 .container__form .input__form {
@@ -225,9 +224,7 @@ body {
   border: 1px solid #c7c5c5;
   border-radius: 4px;
   width: 100%;
-  padding: 10px 10px;
-  margin: 1.5px;
-  height: auto;
+  padding: 8px 8px;
 }
 
 .container__form input:focus {
@@ -307,7 +304,7 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: #c7c5c5;
-  padding: 10px 10px;
+  padding: 8px 8px;
   cursor: pointer;
   display: -ms-grid;
   display: grid;
@@ -316,7 +313,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 46px;
+  height: 43px;
   outline: none;
 }
 
@@ -361,7 +358,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px 50px;
+  margin: 10px;
 }
 
 @media (min-width: 48em) {
@@ -384,5 +381,57 @@ body {
 
 .container__program .container__form {
   margin: 20px 30px;
+}
+
+.counter__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 6rem;
+  color: white;
+}
+
+@media (min-width: 48em) {
+  .counter__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 62em) {
+  .counter__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.counter__container .counter {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 3rem;
+}
+
+.counter__container .counter span {
+  font-size: 1.8rem;
+}
+
+.counter__container img {
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=style.css.map */

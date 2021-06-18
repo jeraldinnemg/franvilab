@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,cAAc,EAAC,MAAM;CAGxB",
+    "sources": [
+        "../app/scss/calculator.scss"
+    ],
+    "names": [],
+    "file": "calculator.css"
+}
