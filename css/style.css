@@ -171,6 +171,11 @@ body {
   position: relative;
 }
 
+.container__functions .function .icon {
+  width: 200px;
+  height: 200px;
+}
+
 .container__functions .function .overlay {
   width: 0%;
   height: 100%;
@@ -383,17 +388,25 @@ body {
   margin: 20px 30px;
 }
 
-.counter__container {
+.main__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__container .counter__container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 6rem;
   color: white;
+  width: 400px;
 }
 
 @media (min-width: 48em) {
-  .counter__container {
+  .main__container .counter__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -407,7 +420,7 @@ body {
 }
 
 @media (min-width: 62em) {
-  .counter__container {
+  .main__container .counter__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -418,7 +431,7 @@ body {
   }
 }
 
-.counter__container .counter {
+.main__container .counter__container .counter {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -426,11 +439,11 @@ body {
   font-size: 3rem;
 }
 
-.counter__container .counter span {
+.main__container .counter__container .counter span {
   font-size: 1.8rem;
 }
 
-.counter__container img {
+.main__container .counter__container img {
   width: 50px;
   height: 50px;
 }

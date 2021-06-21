@@ -41,37 +41,37 @@ const horaFinUgo =  document.querySelector('.fin_ugo');
 
 function addTimes () {
 
-var initUgo = document.getElementById("init_ugo").value; //H.Inicio = initUgo
-var durUgo = document.getElementById("dur_ugo").value; //Duración = durUgo
-var delayUgo  = document.getElementById("delay_ugo").value; // Retrado = delUgo
+const initUgo = document.getElementById("init_ugo").value; //H.Inicio = initUgo
+const durUgo = document.getElementById("dur_ugo").value; //Duración = durUgo
+const delayUgo  = document.getElementById("delay_ugo").value; // Retrado = delUgo
 
 // Declare the array
-  var times = [ 0, 0, 0 ]
-  var max = times.length
+  let times = [ 0, 0, 0 ]
+  let max = times.length
 
 
   // Split to operate minutes an hours
-  var a = (initUgo || '').split(':')
-  var b = (durUgo || '').split(':')
-  var c = (delayUgo || '').split(':')
+  let a = (initUgo || '').split(':')
+  let b = (durUgo || '').split(':')
+  let c = (delayUgo || '').split(':')
 
   // Normalize time values to an integer
-  for (var i = 0; i < max; i++) {
+  for (let i = 0; i < max; i++) {
     a[i] = isNaN(parseInt(a[i])) ? 0 : parseInt(a[i])
     b[i] = isNaN(parseInt(b[i])) ? 0 : parseInt(b[i])
     c[i] = isNaN(parseInt(c[i])) ? 0 : parseInt(c[i])
   }
 
  // Store time values
-  for (var i = 0; i < max; i++) {
+  for (let i = 0; i < max; i++) {
     times[i] = a[i] + b[i] + c[i] 
   }
 
-  var hours = times[0]
-  var minutes = times[1]
+  let hours = times[0]
+  let minutes = times[1]
 
   if (minutes >= 60) {
-    var h = (minutes / 60) << 0
+    let h = (minutes / 60) << 0
     hours += h
     minutes -= 60 * h
 
@@ -86,37 +86,37 @@ const horaFinRapi =  document.querySelector('.fin_rapi');
 
 function addTimes2 () {
 
-var initRapi = document.getElementById("init_rapi").value; //H.Inicio = initUgo
-var durRapi = document.getElementById("dur_rapi").value; //Duración = durUgo
-var delayRapi  = document.getElementById("delay_rapi").value; // Retrado = delUgo
+const initRapi = document.getElementById("init_rapi").value; //H.Inicio = initUgo
+const durRapi = document.getElementById("dur_rapi").value; //Duración = durUgo
+const delayRapi  = document.getElementById("delay_rapi").value; // Retrado = delUgo
 
 // Declare the array
-  var times = [ 0, 0, 0 ]
-  var max = times.length
+  let times = [ 0, 0, 0 ]
+  let max = times.length
 
 
   // Split to operate minutes an hours
-  var x = (initRapi || '').split(':')
-  var y = (durRapi || '').split(':')
-  var z = (delayRapi || '').split(':')
+  let x = (initRapi || '').split(':')
+  let y = (durRapi || '').split(':')
+  let z = (delayRapi || '').split(':')
 
   // Normalize time values to an integer
-  for (var i = 0; i < max; i++) {
+  for (let i = 0; i < max; i++) {
     x[i] = isNaN(parseInt(x[i])) ? 0 : parseInt(x[i])
     y[i] = isNaN(parseInt(y[i])) ? 0 : parseInt(y[i])
     z[i] = isNaN(parseInt(z[i])) ? 0 : parseInt(z[i])
   }
 
  // Store time values
-  for (var i = 0; i < max; i++) {
+  for (let i = 0; i < max; i++) {
     times[i] = x[i] + y[i] + z[i] 
   }
 
-  var hours = times[0]
-  var minutes = times[1]
+  let hours = times[0]
+  let minutes = times[1]
 
   if (minutes >= 60) {
-    var h = (minutes / 60) << 0
+    let h = (minutes / 60) << 0
     hours += h
     minutes -= 60 * h
 
@@ -130,34 +130,34 @@ const horaFinEco =  document.querySelector('.fin_eco');
 
 function addTimes3 () {
 
-var initEco = document.getElementById("init_eco").value; //H.Inicio = initUgo
-var durEco = document.getElementById("dur_eco").value; //Duración = durUgo
-var delayEco  = document.getElementById("delay_eco").value; // Retrado = delUgo
+const initEco = document.getElementById("init_eco").value; //H.Inicio = initUgo
+const durEco = document.getElementById("dur_eco").value; //Duración = durUgo
+const delayEco  = document.getElementById("delay_eco").value; // Retrado = delUgo
 
 // Declare the array
-  var times = [ 0, 0, 0 ]
-  var max = times.length
+  let times = [ 0, 0, 0 ]
+  let max = times.length
 
 
   // Split to operate minutes an hours
-  var j = (initEco || '').split(':')
-  var q = (durEco || '').split(':')
-  var k = (delayEco || '').split(':')
+  let j = (initEco || '').split(':')
+  let q = (durEco || '').split(':')
+  let k = (delayEco || '').split(':')
 
   // Normalize time values to an integer
-  for (var i = 0; i < max; i++) {
+  for (let i = 0; i < max; i++) {
     j[i] = isNaN(parseInt(j[i])) ? 0 : parseInt(j[i])
     q[i] = isNaN(parseInt(q[i])) ? 0 : parseInt(q[i])
     k[i] = isNaN(parseInt(k[i])) ? 0 : parseInt(k[i])
   }
 
  // Store time values
-  for (var i = 0; i < max; i++) {
+  for (let i = 0; i < max; i++) {
     times[i] = j[i] + q[i] + k[i] 
   }
 
-  var hours = times[0]
-  var minutes = times[1]
+  let hours = times[0]
+  let minutes = times[1]
 
   if (minutes >= 60) {
     var h = (minutes / 60) << 0
