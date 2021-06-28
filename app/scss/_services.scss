@@ -9,17 +9,14 @@
         flex: 0 0 50%;
         }
 
-    
     @include breakpoint-up (large){
     flex-direction: row;
     flex: 1;
-        }
+    }
 
-    
     &__functions {
         flex-direction: column;
 
-        
        .function{
             position:relative;
 
@@ -58,7 +55,6 @@
             opacity: 0.8;
         }
     }
-    
 }
 
 

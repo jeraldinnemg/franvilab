@@ -13,30 +13,26 @@
 <body>
 
     <header class="header">
-
         <nav class="flex flex-jc-sb">
             <div>
                 <a href="#" class="header__logo">
                     <img src="images/franvitex.png" alt="franvitex" id="logo">
                 </a>
             </div>
-    
-                <h3 class="header__modulo" >Módulo de Laboratorio FRANVI <span>L A B</span></h3> 
+        <h3 class="header__modulo" >Módulo de Laboratorio FRANVI <span>L A B</span></h3> 
         </nav>
     </header>
 
-
-        
     <div class="container__program flex flex-jc-c flex-ai-c">
         <div class="container__form ">
             <form>
                 <h3> Máquina 1: "UGOLINI" </h3>
-                    <label for="color" id="color" name="color">Color:</label>
-                    <input type="text" class="input__form" placeholder="Introduce el color" autofocus="">
+                    <label for="color">Color:</label>
+                    <input type="text" name="color" id="color" class="input__form" placeholder="Introduce el color" minlength="5" maxlength="15" autofocus="">
 
                     <label for="proceso">Proceso:</label>
                     <div class="select">
-                        <select name="proceso_ugo" id="proceso_ugo">
+                        <select name="proceso_ugo" id="proceso_ugo" class="proceso">
                             <option value="">Selecciona el proceso</option>
                             <option value="00:25">Lavado</option>
                             <option value="01:40">Tintura 63°C</option>
@@ -47,31 +43,29 @@
                         </select>
                     </div>
 
-                    <label for="Hora">Hora Inicio</label>
-                    <input type="text" class="input__form" id="init_ugo" placeholder="00:00" oninput="addTimes()">
+                    <label for="init_ugo"">Hora Inicio</label>
+                    <input type="text" class="input__form" id="init_ugo" placeholder="00:00"  maxlength="5" oninput="addTimes()">
 
-                    <label for="Duración">Duración:</label>
-                    <input type="text" class="input__form dur_ugo" id="dur_ugo" placeholder="00:00" oninput="addTimes()">
+                    <label for="dur_ugo">Duración:</label>
+                    <input type="text" class="input__form dur_ugo" id="dur_ugo" placeholder="00:00" maxlength="5" oninput="addTimes()">
 
-                    <label for="Retraso">Retraso:</label>
+                    <label for="delay_ugo">Retraso:</label>
                     <input type="text" class="input__form" id="delay_ugo" placeholder="00:00" oninput="addTimes()">
 
-                    <label for="Hora">Hora Fin:</label>
-                    <input type="text" class="input__form fin_ugo" placeholder="00:00">
+                    <label for="fin_ugo">Hora Fin:</label>
+                    <input type="text" class="input__form fin_ugo" id="fin_ugo"  placeholder="00:00">
             </form>
-            
         </div>
 
         <div class="container__form">
             <form>
                 <h3>Máquina 2: "RAPID"</h3>
-
-                    <label for="color" id="color" name="color">Color:</label>
-                    <input type="text" class="input__form" placeholder="Introduce el color" autofocus="">
+                    <label for="color">Color:</label>
+                    <input type="text" name="color" id="color" class="input__form" placeholder="Introduce el color" autofocus="">
   
-                    <label for="proceso">Proceso:</label>
+                    <label for="proceso_rapi">Proceso:</label>
                     <div class="select">
-                        <select name="proceso_rapi" id="proceso_rapi">
+                        <select name="proceso_rapi" id="proceso_rapi" class="proceso">
                             <option value="seleccion">Selecciona el proceso</option>
                             <option value="00:20">Lavado</option>
                             <option value="01:50">Tintura 63°C</option>
@@ -82,33 +76,29 @@
                         </select>
                     </div>
   
-                    <label for="Hora">Hora Inicio: </label>
-                    <input type="text" class="input__form" id="init_rapi" placeholder="00:00" oninput="addTimes2()">
+                    <label for="init_rapi">Hora Inicio: </label>
+                    <input type="text" class="input__form" id="init_rapi" placeholder="00:00" maxlength="5" oninput="addTimes2()">
                            
-                    <label for="duracion">Duración:</label>
-                    <input type="text" class="input__form dur_rapi" id="dur_rapi" placeholder="00:00" oninput="addTimes2()">
+                    <label for="dur_rapi">Duración:</label>
+                    <input type="text" class="input__form dur_rapi" id="dur_rapi" placeholder="00:00" maxlength="5" oninput="addTimes2()">
                             
-                    <label for="time">Retraso:</label>
+                    <label for="delay_rapi">Retraso:</label>
                     <input type="text" class="input__form" id="delay_rapi" placeholder="00:00" oninput="addTimes2()">
 
-                    <label for="Hora">Hora Fin:</label>
-                    <input type="text" class="input__form fin_rapi" id="fin2" placeholder="00:00">
-            
+                    <label for="fin_rapi">Hora Fin:</label>
+                    <input type="text" class="input__form fin_rapi" id="fin_rapi" placeholder="00:00">
                 </form>
-            
-
         </div>
         
         <div class="container__form">
             <form>
-
                 <h3>Máquina 3: "ECODYER"</h3>
-                    <label for="color" id="color" name="color">Color:</label>
-                    <input type="text" class="input__form" placeholder="Introduce el color" autofocus="">
+                    <label for="color">Color:</label>
+                    <input type="text" name="color" id="color" class="input__form" placeholder="Introduce el color" autofocus="">
 
-                    <label for="proceso">Proceso:</label>
+                    <label for="proceso_eco">Proceso:</label>
                     <div class="select">
-                        <select name="proceso_eco" id="proceso_eco">
+                        <select name="proceso_eco" id="proceso_eco" class="proceso">
                             <option value="seleccion">Selecciona el proceso</option>
                             <option value="00:25">Lavado</option>
                             <option value="01:45">Tintura 63°C</option>
@@ -119,23 +109,19 @@
                         </select>
                     </div>
 
-                    <label for="Hora">Hora Inicio:</label>
-                    <input type="text" class="input__form" id="init_eco" placeholder="00:00" oninput="addTimes3()">
+                    <label for="init_eco">Hora Inicio:</label>
+                    <input type="text" class="input__form" id="init_eco" placeholder="00:00" maxlength="5" oninput="addTimes3()">
 
-                    <label for="Duración">Duración:</label>
-                    <input type="text" class="input__form dur_eco" id="dur_eco" placeholder="00:00" oninput="addTimes3()">
+                    <label for="dur_eco">Duración:</label>
+                    <input type="text" class="input__form dur_eco" id="dur_eco" placeholder="00:00" maxlength="5" oninput="addTimes3()">
 
-                    <label for="Retraso<">Retraso:</label>
+                    <label for="delay_eco">Retraso:</label>
                     <input type="text" class="input__form" id="delay_eco" placeholder="00:00" oninput="addTimes3()">
 
-                    <label for="Hora">Hora Fin:</label>
-                    <input type="text" class="input__form fin_eco" placeholder="00:00">
-                 
+                    <label for="fin_eco">Hora Fin:</label>
+                    <input type="text" class="input__form fin_eco" id="fin_eco" placeholder="00:00">
             </form>
-        </div>
-
-
-        
+        </div>  
     </div>
     
 </body>

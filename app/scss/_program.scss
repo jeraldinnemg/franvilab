@@ -2,22 +2,22 @@
 
     flex-direction: column;
     margin: 10px;
-
-
-     
+    
     @include breakpoint-up (medium){
         flex-direction: row;
- 
         }
-
     
     @include breakpoint-up (large){
     flex-direction: row;
         }
+        
+    .container__form {
+        margin: 20px 30px;
 
-        .container__form {
-            margin: 20px 30px;
-
-
+        .proceso {
+            outline: none;
         }
+    }
+
+
 }

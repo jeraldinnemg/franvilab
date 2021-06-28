@@ -1,5 +1,4 @@
 
-
     .container__form {
         flex-direction: column;
         background-color:$lightgray;
@@ -7,34 +6,28 @@
         padding: 20px 40px;
         border-radius: 10px;
         margin: 30px;
+        position:relative;
         box-shadow: 5px 5px 10px rgba(68, 68, 68, 0.6);
 
-
+         // ---------------- CUSTOM FORM INPUT ----------------
 
         .input__form {
-        display:inline-block;
-        font-family: inherit;
-        font-size: 16px;
-        background-color: $white;
-        border: 1px solid $medgray;
-        border-radius: 4px;
-        width: 100%;
-        padding: 8px 8px;
-
+            display:inline-block;
+            font-family: inherit;
+            font-size: 16px;
+            background-color: $white;
+            border: 1px solid $medgray;
+            border-radius: 4px;
+            width: 100%;
+            padding: 8px 8px;
         }
 
         input:focus  {
             border: 2px solid $bordo;
             outline: none;
-
         } 
 
-        // CUSTOM RADIO
-
-        input[type="radio"] {
-            display:none;
-        }
-
+         // ---------------- CUSTOM NEW RADIO BUTTON ----------------
         .radio__form label {
             background-color: $medgray;
             padding: 2px 10px 2px 26px;
@@ -72,8 +65,12 @@
         .form-check input[type="radio"]:checked + label:before {
             display:none
         }
+
+        input[type="radio"] {
+            display:none;
+        }
         
-        // CUSTOM SELECT "ARTICULO"
+         // ---------------- CUSTOM NEW SELECT ----------------
         select {
             appearance: none;
             background-color: transparent;
@@ -90,7 +87,7 @@
             display: none;
         }
         
-        .select {
+        .select{
             width: 100%;
             display:block;
             font-family: inherit;
@@ -109,7 +106,6 @@
             position:relative;
             height:43px;
             outline: none;
-
         }
         
         .select::after {
@@ -119,7 +115,6 @@
             background-color: $gray;
             clip-path: polygon(100% 0%, 0 0%, 50% 100%);
             justify-self: end;
-            
         }
         
         select,
@@ -127,17 +122,54 @@
         grid-area: select;
         }
 
-
-        select:focus + .focus {
-            position:absolute;
-            top: -1px;
-            left: -1px;
-            right:-1px;
-            bottom: -1px;
+        .select:focus-within  {
             border: 2px solid $bordo;
-            border-radius: inherit;
+        } 
+        
+        #select, #proceso, .directo, .reactivo, .disperso {
+            outline: none;
+        }
+
+     // ---------------- CUSTOM NEW INPUT FOR "ORIGEN" AND "DESCRIPCIÓN"----------------
+
+     .input-text:empty:before {
+        content: attr(data-placeholder) !important;
+        color: $gray;
+
     }
-    
+
+    .input__expanded {
+        width: 100%;
+        font-family: inherit;
+        font-size: 16px;
+        background-color: $white;
+        border: none;
+        border-radius: 4px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $medgray;
+        padding: 8px 8px;
+        align-items: center;
+        outline: none;
+    }
+
+    #input-origen, #input-descripcion {
+    display:none;
+    }
+
+    .input__expanded:focus-within  {
+        border: 2px solid $bordo;
+
+    } 
+
+    .input-text  {
+        outline: none;
+    } 
+
+
+
+    // ---------------- CLASSES TO COLORANTS----------------
+
     .tricromia {
         .select {
             .hide {

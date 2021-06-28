@@ -1,8 +1,6 @@
 // 1. Select according to the process duration
-
  //Bring elements to the DOM (duration values + input duration). 
  // Each dye machine has different process with unique duration ("id")
-
 
 const selectUgo = document.getElementById('proceso_ugo');
 const selectRapi = document.getElementById('proceso_rapi');
@@ -14,7 +12,6 @@ const durationEco = document.querySelector('.dur_eco')
 
 
 // 2. Function to show the duration according to the process selected
-
 selectUgo.onchange = function() {
   const durValue1 = this.value;
   durationUgo.value = durValue1;
@@ -33,14 +30,12 @@ selectEco.onchange = function() {
 };
 
 
-// Function to show the Final Hour of the process (Sum H.Incio + Duration + Delay)
-
+// 3. Function to show the Final Hour of the process (Sum H.Incio + Duration + Delay)
 
 //UGOLINI 
 const horaFinUgo =  document.querySelector('.fin_ugo');
 
 function addTimes () {
-
 const initUgo = document.getElementById("init_ugo").value; //H.Inicio = initUgo
 const durUgo = document.getElementById("dur_ugo").value; //Duración = durUgo
 const delayUgo  = document.getElementById("delay_ugo").value; // Retrado = delUgo
@@ -48,7 +43,6 @@ const delayUgo  = document.getElementById("delay_ugo").value; // Retrado = delUg
 // Declare the array
   let times = [ 0, 0, 0 ]
   let max = times.length
-
 
   // Split to operate minutes an hours
   let a = (initUgo || '').split(':')

@@ -8,7 +8,6 @@
             max-height: 50px;
         }
 
-    
         &__logo {
             img{
                 width: 190px;
@@ -29,7 +28,6 @@
                 
                 @include breakpoint-up (large){
                     font-size: 1.8rem;
-              
                     }
             }
             
@@ -37,10 +35,6 @@
                 color: rgb(255, 255, 255);
                 background-color: rgb(8, 6, 37);
             }
-        
-
-            
-
     }
     
 
